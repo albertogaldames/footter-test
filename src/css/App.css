@@ -1,0 +1,124 @@
+.App {
+  height: 100%;
+  min-height: 100vh;
+  background: #f3f5f7;
+  padding: 40px 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);
+  overflow-x: auto;
+}
+.card-body {
+  padding: 20px;
+}
+.material-table {
+  text-align: left;
+  border-collapse: collapse;
+  border: none;
+  width: 100%;
+}
+.material-table tbody tr {
+  cursor: pointer;
+  border-top: 1px solid #efefef;
+}
+.material-table tbody tr:hover {
+  background: #032A53;
+  color: white;
+}
+.material-table th, .material-table td{
+  padding: 15px 10px;
+}
+
+.material-button {
+  transition: all 0.5s;
+  background: rgb(3,42,83,0.9);
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);
+  padding: 10px 20px;
+  cursor: pointer;
+  color: white;
+}
+.material-button:hover, .material-button:focus, .material-button:active {
+  outline: none;
+  background: rgb(3,42,83);
+  padding: 10px 16px;
+}
+.material-button::before {
+  content:'<';
+  opacity: 0;
+  transition: all 0.5s;
+  margin-right: -6px;
+}
+.material-button:hover::before{
+  opacity: 1;
+  margin-right: 5px;
+}
+.row {
+  width: 100%;
+  margin-bottom: 24px;
+  clear: both;
+}
+.col-s6 {
+  width: 50%;
+  float: left;
+}
+.col-s4 {
+  width: 33,3%;
+  float: left;
+}
+.inline-middle > *:first-child {
+  margin-right: 5px;
+}
+.inline-middle > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+.quote {
+  border-left: 3px solid #032A53;
+  padding: 10px 15px;
+}
+.quote h4{
+  margin: 0px;
+}
+.marginb--10 {
+  margin-bottom: 10px;
+}
+.badget {
+  padding: 5px 10px;
+  font-size: 0.8em;
+  color: white;
+  display: inline-block;
+  border-radius: 50px;
+  background: rgb(3,42,83, 0.8);
+  transition: all 0.5s;
+  margin-right: 3px;
+}
+.badget:hover {
+  background: rgb(3,42,83);
+}
+a{
+  text-decoration: none;
+  color: #032A53;
+}
+a:hover {
+  text-decoration: underline;
+}
+.em {
+  font-size: 0.9em;
+  color: #444;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+@media (max-width: 780px) {
+  .col-s6 {
+    width:100%;
+  }
+}
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
